@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+   <meta name="viewport" content="width=width-device, initial=1" />
+   <meta charset="UTF-8" />
+   <title>Music</title>
+   <link rel="stylesheet" href="./assets/css/normalize.css" />
+   <link rel="stylesheet" href="./assets/css/styles.css" />
+</head>
+
+<body>
+   <div class="container">
+      <header class="box container">
+         <input type="text" id="searched-artist-input" class="artist-input-text" placeholder="Artista" />
+         <button id="search-button" class="artist-search-button">Pesquisar</button>
+      </header>
+
+      <article class="box container">
+         <header class="box container">
+            <img id="artist-img" class="artist-img" src="" />
+            <nav id="artist-nav" class="box container">
+               <ul id="artist-ul" class="artist-nav-ul box container">
+               </ul>
+            </nav>
+         </header>
+
+         <div class="box container" id="main">
+            <ol class="ol-music-list" id="ol-music-list"></ol>
+         </div>
+      </article>
+   </div>
+
+   <script src="assets/js/urlFormater.js"></script>
+   <script src="assets/js/apiAudioDb.js"></script>
+   <script src="assets/js/apiDeezer.js"></script>
+   <script src="assets/js/script.js"></script>
+
+</body>
+
+</html>
